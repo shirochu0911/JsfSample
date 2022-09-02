@@ -18,10 +18,10 @@ public class HelloDao {
 		System.out.println("修正後");
 		
 		con = DriverManager.getConnection(URL, USER, PASSWORD);
-		String sql = "Insert into parrotMemory values ('"+word+"');";
+		String sql = "Insert into parrotmemory values ('"+word+"');";
 		
 		ps = con.prepareStatement(sql);
-		
+		ps.executeUpdate();
 		
 			try {
 				if (ps != null) {

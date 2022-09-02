@@ -36,7 +36,7 @@ public class Hello {
 		hellodao.insertWord(familyName);
 		
 		setFamilyName(familyName+"今日もいい天気だ");
-        return "/faces/output.xhtml";
+        return "/output.xhtml";
     }
 
 }
