@@ -18,7 +18,6 @@ public class UsersBean implements Serializable {
 	public UsersBean() {
 		UserDao userDao = new UserDao();
 		users = userDao.getAllUsers();
-		String a = "白石チュウヤ";
 	}
 
 	public ArrayList<User> getUsers() {
