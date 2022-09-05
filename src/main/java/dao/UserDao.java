@@ -14,7 +14,7 @@ public class UserDao {
 
 	private final String URL ="jdbc:postgresql://localhost:5432/sample";
 	private final String USER = "postgres";
-	private final String PASSWORD = "gi051peq-";
+	private final String PASSWORD = "P@ssw0rd";
 
 	// 全件取得
 	public ArrayList<User> getAllUsers() {

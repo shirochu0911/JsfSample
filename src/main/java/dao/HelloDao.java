@@ -9,7 +9,7 @@ public class HelloDao {
 	
 	private final String URL ="jdbc:postgresql://localhost:5432/sample";
 	private final String USER = "postgres";
-	private final String PASSWORD = "gi051peq-";
+	private final String PASSWORD = "P@ssw0rd";
 	//入力値登録
 	public void insertWord(String word) throws SQLException {
 		Connection con = null;
