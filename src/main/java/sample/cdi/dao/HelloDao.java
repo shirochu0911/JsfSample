@@ -1,4 +1,4 @@
-package dao;
+package sample.cdi.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,18 +7,16 @@ import java.sql.SQLException;
 
 public class HelloDao {
 	
-	private final String URL ="jdbc:postgresql://localhost:5432/sample";
+	private final String URL ="jdbc:postgresql://localhost:5432/postgres";
 	private final String USER = "testuser";
 	private final String PASSWORD = "P@ssw0rd";
 	//入力値登録
-	public void insertWord(String word) throws SQLException {
+	public void insertWord(int id,String word) throws SQLException {
 		Connection con = null;
 		PreparedStatement ps = null;
 		
-		System.out.println("修正後");
-		
 		con = DriverManager.getConnection(URL, USER, PASSWORD);
-		String sql = "Insert into parrotmemory values ('"+word+"');";
+		String sql = "Insert into sample values ("+id+",'"+word+"');";
 		
 		ps = con.prepareStatement(sql);
 		ps.executeUpdate();

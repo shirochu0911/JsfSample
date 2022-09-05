@@ -13,7 +13,7 @@ import javabeans.User;
 public class UserDao {
 
 	private final String URL ="jdbc:postgresql://localhost:5432/sample";
-	private final String USER = "postgres";
+	private final String USER = "testuser";
 	private final String PASSWORD = "P@ssw0rd";
 
 	// 全件取得
