@@ -43,7 +43,7 @@ public class HelloBackingBean {
     }
 	
 	public String back() {
-		return "/view/output.xhtml";
+		return "/view/input.xhtml";
 	}
 
 }
