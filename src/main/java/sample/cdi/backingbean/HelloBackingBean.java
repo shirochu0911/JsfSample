@@ -6,14 +6,14 @@ import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import sample.cdi.service.HelloService;
+import sample.cdi.service.SampleInterface;
 
 @Named
 @RequestScoped
 public class HelloBackingBean {
 	
 	@Inject
-	private HelloService helloService;
+	private SampleInterface sampleInterface;
 
 	private int id;
 	private String name;
@@ -37,7 +37,7 @@ public class HelloBackingBean {
 	
 	public String next() throws SQLException {
 		
-		this.helloService.dataInsert(id, name);
+		this.sampleInterface.dataInsert(id, name);
 		System.out.println("HellobackingBean");
         return "/view/output.xhtml";
     }
