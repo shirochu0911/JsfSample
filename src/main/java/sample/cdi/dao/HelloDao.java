@@ -12,6 +12,14 @@ public class HelloDao {
 	private final String PASSWORD = "P@ssw0rd";
 	//入力値登録
 	public void insertWord(int id,String word) throws SQLException {
+		
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		Connection con = null;
 		PreparedStatement ps = null;
 		
